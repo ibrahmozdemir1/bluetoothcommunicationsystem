@@ -1,0 +1,4 @@
+#Sat Feb 19 05:51:37 TRT 2022
+base.0=C\:\\Users\\googl\\Downloads\\blu_chat-main\\blu_chat-main\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
