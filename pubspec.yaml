@@ -23,6 +23,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  photo_manager: 0.5.8
+  video_player: 0.11.1+2
+  photo_view:
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -74,3 +77,22 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+  assets:
+    - foto/wallpaper-1.jpeg
+    - foto/wallpaper-2.jpeg
+    - foto/wallpaper-3.jpeg
+    - foto/1.jpg
+    - foto/2.jpg
+    - foto/3.jpg
+    - foto/4.jpg
+    - foto/5.jpg
+    - foto/6.jpg
+    - foto/7.jpg
+    - foto/8.jpg
+    - foto/9.jpg
+    - foto/10.jpg
+    - foto/11.jpg
+    - foto/12.jpg
+    - foto/13.jpg
+    - foto/14.jpg
