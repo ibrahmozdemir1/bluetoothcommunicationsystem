@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\googl\\Downloads\\blu_chat-main\\blu_chat-main\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mr\\values-mr.xml",
+            "outputFile": "C:\\Users\\googl\\bluetoothcommunicationsystem\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mr\\values-mr.xml",
             "map": [
                 {
                     "source": "C:\\Users\\googl\\.gradle\\caches\\transforms-2\\files-2.1\\c1ebda589683e9beaa06b540aac78854\\core-1.6.0\\res\\values-mr\\values-mr.xml",

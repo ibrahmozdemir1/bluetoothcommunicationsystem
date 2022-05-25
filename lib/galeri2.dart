@@ -16,9 +16,9 @@ class MyApp extends StatelessWidget {
 
 class DisplayPage extends StatelessWidget {
   final List<String> images = [
-    "assets/wallpaper-1.jpeg",
-    "assets/wallpaper-2.jpeg",
-    "assets/wallpaper-3.jpeg",
+    "foto/wallpaper-1.jpeg",
+    "foto/wallpaper-2.jpeg",
+    "foto/wallpaper-3.jpeg",
   ];
 
   @override

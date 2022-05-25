@@ -27,10 +27,5 @@ public final class GeneratedPluginRegistrant {
     } catch(Exception e) {
       Log.e(TAG, "Error registering plugin photo_manager, top.kikt.imagescanner.ImageScannerPlugin", e);
     }
-    try {
-      flutterEngine.getPlugins().add(new io.flutter.plugins.videoplayer.VideoPlayerPlugin());
-    } catch(Exception e) {
-      Log.e(TAG, "Error registering plugin video_player, io.flutter.plugins.videoplayer.VideoPlayerPlugin", e);
-    }
   }
 }

@@ -6,7 +6,7 @@ import 'package:flutter_blue_app/galeri_home.dart';
 // bunu çalıştırmak mümkün değil ancak en güzel görünüme sahip olan modül bu
 //eğer becerebliirsek bunu kullanmamız daha iyi olur
 
-class MyApp extends StatelessWidget {
+class GaleriBen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

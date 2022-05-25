@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\googl\\Downloads\\blu_chat-main\\blu_chat-main\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "C:\\Users\\googl\\bluetoothcommunicationsystem\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\googl\\Downloads\\blu_chat-main\\blu_chat-main\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "C:\\Users\\googl\\bluetoothcommunicationsystem\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
