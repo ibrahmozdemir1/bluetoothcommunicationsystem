@@ -9,46 +9,46 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final List_Item = [
     {
-      'pic': 'assets/img/1.jpg',
+      'pic': 'foto/1.jpg',
     },
     {
-      'pic': 'assets/img/2.jpg',
+      'pic': 'foto/2.jpg',
     },
     {
-      'pic': 'assets/img/3.jpg',
+      'pic': 'foto/3.jpg',
     },
     {
-      'pic': 'assets/img/4.jpg',
+      'pic': 'foto/4.jpg',
     },
     {
-      'pic': 'assets/img/5.jpg',
+      'pic': 'foto/5.jpg',
     },
     {
-      'pic': 'assets/img/6.jpg',
+      'pic': 'foto/6.jpg',
     },
     {
-      'pic': 'assets/img/7.jpg',
+      'pic': 'foto/7.jpg',
     },
     {
-      'pic': 'assets/img/8.jpg',
+      'pic': 'foto/8.jpg',
     },
     {
-      'pic': 'assets/img/9.jpg',
+      'pic': 'foto/9.jpg',
     },
     {
-      'pic': 'assets/img/10.jpg',
+      'pic': 'foto/10.jpg',
     },
     {
-      'pic': 'assets/img/11.jpg',
+      'pic': 'foto/11.jpg',
     },
     {
-      'pic': 'assets/img/12.jpg',
+      'pic': 'foto/12.jpg',
     },
     {
-      'pic': 'assets/img/13.jpg',
+      'pic': 'foto/13.jpg',
     },
     {
-      'pic': 'assets/img/14.jpg',
+      'pic': 'foto/14.jpg',
     },
   ];
   @override

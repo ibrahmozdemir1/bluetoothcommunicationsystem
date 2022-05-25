@@ -20,20 +20,19 @@ class _PreviewImageState extends State<PreviewImage> {
             tag: widget.picDetails_view,
             child: Material(
               child: PhotoView(
-                imageProvider: AssetImage(
-                  widget.picDetails_view,
-                ),
-                minScale: PhotoViewComputedScale.contained * 0.5,
-                maxScale: PhotoViewComputedScale.contained * 5,
-                enableRotation: true,
-                backgroundDecoration: BoxDecoration(
-                  color: Theme.of(context).canvasColor,
-                ),
-                //buradaki hatayı henüz çözümleyemedim
-                loadingChild: Center(
-                  child: CircularProgressIndicator(),
-                ),
-              ),
+                  imageProvider: AssetImage(
+                    widget.picDetails_view,
+                  ),
+                  minScale: PhotoViewComputedScale.contained * 0.5,
+                  maxScale: PhotoViewComputedScale.contained * 5,
+                  enableRotation: true,
+                  backgroundDecoration: BoxDecoration(
+                    color: Theme.of(context).canvasColor,
+                  ),
+                  //buradaki hatayı henüz çözümleyemedim
+                  loadingBuilder: (context, event) => Center(
+                        child: CircularProgressIndicator(),
+                      )),
             ),
           ),
         ),
