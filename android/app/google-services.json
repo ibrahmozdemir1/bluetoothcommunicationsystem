@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1087599431089",
+    "firebase_url": "https://esp32cam-461c5-default-rtdb.firebaseio.com",
+    "project_id": "esp32cam-461c5",
+    "storage_bucket": "esp32cam-461c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087599431089:android:b0e11dbcd863dd20d40190",
+        "android_client_info": {
+          "package_name": "com.example.flutter_blue_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087599431089-nq02fjrff49rt7pjpdco3hpcgosde76k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcN-tclnWky9EZsT5iWGg_J5sc0R6mc7o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1087599431089-nq02fjrff49rt7pjpdco3hpcgosde76k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -56,13 +56,25 @@ class _MainPage extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color.fromARGB(255, 6, 90, 163),
         title: const Text('Kablosuz İletişim Sistemi'),
       ),
       body: Container(
+        decoration: const BoxDecoration(
+            gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+              Color.fromARGB(255, 145, 199, 243),
+              Colors.white,
+              Color.fromARGB(255, 145, 199, 243),
+            ])),
         child: ListView(
           children: <Widget>[
             Divider(),
             SwitchListTile(
+              activeColor: Color.fromARGB(255, 6, 90, 163),
+              inactiveTrackColor: Color.fromRGBO(181, 8, 11, 1),
               title: const Text('Bluetoothu Aç'),
               value: _bluetoothState.isEnabled,
               onChanged: (bool value) {
@@ -101,7 +113,9 @@ class _MainPage extends State<MainPage> {
             ),
             ListTile(
               title: ElevatedButton(
-                child: const Text('Connect to paired device to chat'),
+                style: ElevatedButton.styleFrom(
+                    primary: Color.fromARGB(255, 6, 90, 163)),
+                child: const Text('Cihaz Seç ve Bağlan'),
                 onPressed: () async {
                   final BluetoothDevice selectedDevice =
                       await Navigator.of(context).push(

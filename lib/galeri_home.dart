@@ -1,71 +1,111 @@
+// ignore_for_file: unused_field, non_constant_identifier_names
+
+import 'dart:typed_data';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_blue_app/preview_image.dart';
+import 'package:firebase_storage/firebase_storage.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+import 'DataHolder.dart';
 
+int imageSize = 0;
+
+getImage() async {
+  var storageRef = FirebaseStorage.instance.ref().child("data");
+  storageRef.listAll().then((result) => {
+        result.items.forEach((imageRef) {
+          displayImage(imageRef);
+        })
+      });
+}
+
+void displayImage(imageRef) async {
+  imageRef.getDownloadURL().then((url) => {
+        imageData[imageSize] = url.toString(),
+        requestIndex.add(imageSize),
+        print(url),
+        print(imageSize),
+        print(imageData[imageSize]),
+        print(requestIndex.length),
+        imageSize++
+      });
+}
+
+// ignore: must_be_immutable
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
-  final List_Item = [
-    {
-      'pic': 'foto/1.jpg',
-    },
-    {
-      'pic': 'foto/2.jpg',
-    },
-    {
-      'pic': 'foto/3.jpg',
-    },
-    {
-      'pic': 'foto/4.jpg',
-    },
-    {
-      'pic': 'foto/5.jpg',
-    },
-    {
-      'pic': 'foto/6.jpg',
-    },
-    {
-      'pic': 'foto/7.jpg',
-    },
-    {
-      'pic': 'foto/8.jpg',
-    },
-    {
-      'pic': 'foto/9.jpg',
-    },
-    {
-      'pic': 'foto/10.jpg',
-    },
-    {
-      'pic': 'foto/11.jpg',
-    },
-    {
-      'pic': 'foto/12.jpg',
-    },
-    {
-      'pic': 'foto/13.jpg',
-    },
-    {
-      'pic': 'foto/14.jpg',
-    },
-  ];
   @override
   Widget build(BuildContext context) {
+    getImage();
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('Gallery'),
+        title: Text(requestIndex.length.toString()),
       ),
       body: Container(
         child: GridView.builder(
-          itemCount: List_Item.length,
+          itemCount: requestIndex.length,
           gridDelegate:
               SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
-          itemBuilder: (BuildContext context, int i) {
-            return Product(product_image: List_Item[i]['pic']);
+          itemBuilder: (context, index) {
+            return ImageGridItem(index);
           },
+        ),
+      ),
+    );
+  }
+}
+
+// ignore: must_be_immutable
+class ImageGridItem extends StatefulWidget {
+  int _index;
+
+  ImageGridItem(int index) {
+    this._index = index;
+  }
+
+  @override
+  _ImageGridItemState createState() => _ImageGridItemState();
+}
+
+class _ImageGridItemState extends State<ImageGridItem> {
+  Widget decideGridTileWidget() {
+    if (imageData[widget._index] == null) {
+      return Center(child: Text("Fotoğraf Yüklenemedi"));
+    } else {
+      return Image.network(imageData[widget._index], fit: BoxFit.cover);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: Hero(
+        tag: widget._index,
+        child: Column(
+          children: <Widget>[
+            Container(
+              child: Text((requestIndex.length).toString()),
+            ),
+            Material(
+              child: InkWell(
+                onTap: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) {
+                    return Product(product_image: imageData[widget._index]);
+                  }));
+                },
+                child: GridTile(
+                  child: decideGridTileWidget(),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
@@ -82,17 +122,10 @@ class Product extends StatelessWidget {
       child: Hero(
         tag: product_image,
         child: Material(
-          child: InkWell(
-            onTap: () {
-              Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) =>
-                      PreviewImage(picDetails_view: product_image)));
-            },
-            child: GridTile(
-              child: Image.asset(
-                product_image,
-                fit: BoxFit.cover,
-              ),
+          child: GridTile(
+            child: Image.asset(
+              product_image,
+              fit: BoxFit.cover,
             ),
           ),
         ),

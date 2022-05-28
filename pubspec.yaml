@@ -27,7 +27,10 @@ dependencies:
   flutter_svg: ^1.0.3
   lottie: ^1.2.2
   font_awesome_flutter: ^9.2.0
-  photo_manager: 0.5.8
+  firebase_core: ^1.17.0
+  cloud_firestore: ^3.1.16
+  flutterfire_cli: 0.2.2+2
+
 
 
 
@@ -35,6 +38,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   flutter_bluetooth_serial: ^0.2.2
+  firebase_storage: ^10.2.16
+  flutterfire: ^0.0.1
 
   
 dev_dependencies:
