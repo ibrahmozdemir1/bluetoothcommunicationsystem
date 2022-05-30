@@ -3,8 +3,16 @@ import 'package:flutter_blue_app/anasayfa.dart';
 
 import 'MainPage.dart';
 import 'anasayfa.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
-void main() => runApp(new ExampleApplication());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  runApp(new ExampleApplication());
+}
 
 class ExampleApplication extends StatelessWidget {
   @override

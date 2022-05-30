@@ -18,14 +18,29 @@ public final class GeneratedPluginRegistrant {
   public static void registerWith(@NonNull FlutterEngine flutterEngine) {
     ShimPluginRegistry shimPluginRegistry = new ShimPluginRegistry(flutterEngine);
     try {
+      flutterEngine.getPlugins().add(new io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestorePlugin());
+    } catch(Exception e) {
+      Log.e(TAG, "Error registering plugin cloud_firestore, io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestorePlugin", e);
+    }
+    try {
+      flutterEngine.getPlugins().add(new io.flutter.plugins.firebase.core.FlutterFirebaseCorePlugin());
+    } catch(Exception e) {
+      Log.e(TAG, "Error registering plugin firebase_core, io.flutter.plugins.firebase.core.FlutterFirebaseCorePlugin", e);
+    }
+    try {
+      flutterEngine.getPlugins().add(new io.flutter.plugins.firebase.storage.FlutterFirebaseStoragePlugin());
+    } catch(Exception e) {
+      Log.e(TAG, "Error registering plugin firebase_storage, io.flutter.plugins.firebase.storage.FlutterFirebaseStoragePlugin", e);
+    }
+    try {
       io.github.edufolly.flutterbluetoothserial.FlutterBluetoothSerialPlugin.registerWith(shimPluginRegistry.registrarFor("io.github.edufolly.flutterbluetoothserial.FlutterBluetoothSerialPlugin"));
     } catch(Exception e) {
       Log.e(TAG, "Error registering plugin flutter_bluetooth_serial, io.github.edufolly.flutterbluetoothserial.FlutterBluetoothSerialPlugin", e);
     }
     try {
-      flutterEngine.getPlugins().add(new top.kikt.imagescanner.ImageScannerPlugin());
+      flutterEngine.getPlugins().add(new io.flutter.plugins.pathprovider.PathProviderPlugin());
     } catch(Exception e) {
-      Log.e(TAG, "Error registering plugin photo_manager, top.kikt.imagescanner.ImageScannerPlugin", e);
+      Log.e(TAG, "Error registering plugin path_provider_android, io.flutter.plugins.pathprovider.PathProviderPlugin", e);
     }
   }
 }

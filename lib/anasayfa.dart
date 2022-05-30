@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_blue_app/MainPage.dart';
-import 'package:flutter_blue_app/galeri2.dart';
-import 'package:lottie/lottie.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'galeri3.dart';
+import 'galeri_home.dart';
 
 class Anasayfa extends StatelessWidget {
   void click() {}
@@ -145,8 +142,7 @@ class Anasayfa extends StatelessWidget {
                         onTap: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(
-                                builder: (context) => GaleriBen()),
+                            MaterialPageRoute(builder: (context) => Splash()),
                           );
                         },
                       ),
