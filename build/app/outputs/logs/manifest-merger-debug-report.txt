@@ -9,6 +9,7 @@ MERGED from [:firebase_storage] C:\Users\googl\bluetoothcommunicationsystem\buil
 MERGED from [:cloud_firestore] C:\Users\googl\bluetoothcommunicationsystem\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
 MERGED from [:firebase_core] C:\Users\googl\bluetoothcommunicationsystem\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
 MERGED from [:flutter_bluetooth_serial] C:\Users\googl\bluetoothcommunicationsystem\build\flutter_bluetooth_serial\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:path_provider_android] C:\Users\googl\bluetoothcommunicationsystem\build\path_provider_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\079fe22a9d0162f69ee77f4bcfbc4f78\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\88e5ffdc4bb2535c1f3ed335b31246ea\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
 MERGED from [com.google.firebase:firebase-firestore:24.1.2] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\db3204ab23c87185c2ae53be10828133\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:2:1-26:12
@@ -35,8 +36,8 @@ MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\googl\.gra
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\aa512d8817744edc5b4f1a87b132967f\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\2638c36f4515d760476536c5231163d3\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\6e5af2605c594bffd346fbe462ef30e8\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\f10305edd77ec4b1bead7fddf8bb11f0\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\0b0a8f03f6b15ad4fb469e7ff6e3cd64\jetified-grpc-android-1.44.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\f10305edd77ec4b1bead7fddf8bb11f0\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\0677aa53e9584641ff66677155ac8fd5\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 INJECTED from C:\Users\googl\bluetoothcommunicationsystem\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from C:\Users\googl\bluetoothcommunicationsystem\android\app\src\debug\AndroidManifest.xml:1:1-7:12
@@ -145,6 +146,8 @@ MERGED from [:firebase_core] C:\Users\googl\bluetoothcommunicationsystem\build\f
 MERGED from [:firebase_core] C:\Users\googl\bluetoothcommunicationsystem\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_bluetooth_serial] C:\Users\googl\bluetoothcommunicationsystem\build\flutter_bluetooth_serial\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_bluetooth_serial] C:\Users\googl\bluetoothcommunicationsystem\build\flutter_bluetooth_serial\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] C:\Users\googl\bluetoothcommunicationsystem\build\path_provider_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] C:\Users\googl\bluetoothcommunicationsystem\build\path_provider_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\079fe22a9d0162f69ee77f4bcfbc4f78\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\079fe22a9d0162f69ee77f4bcfbc4f78\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\88e5ffdc4bb2535c1f3ed335b31246ea\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
@@ -197,10 +200,10 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\googl\.gradle\cache
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\2638c36f4515d760476536c5231163d3\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\6e5af2605c594bffd346fbe462ef30e8\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\6e5af2605c594bffd346fbe462ef30e8\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\f10305edd77ec4b1bead7fddf8bb11f0\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\f10305edd77ec4b1bead7fddf8bb11f0\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
 MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\0b0a8f03f6b15ad4fb469e7ff6e3cd64\jetified-grpc-android-1.44.1\AndroidManifest.xml:5:5-7:41
 MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\0b0a8f03f6b15ad4fb469e7ff6e3cd64\jetified-grpc-android-1.44.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\f10305edd77ec4b1bead7fddf8bb11f0\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\f10305edd77ec4b1bead7fddf8bb11f0\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\0677aa53e9584641ff66677155ac8fd5\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\0677aa53e9584641ff66677155ac8fd5\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 INJECTED from C:\Users\googl\bluetoothcommunicationsystem\android\app\src\debug\AndroidManifest.xml

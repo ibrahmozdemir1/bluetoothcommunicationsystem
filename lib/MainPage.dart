@@ -1,9 +1,9 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_blue_app/communication.dart';
-import 'package:flutter_bluetooth_serial/flutter_bluetooth_serial.dart';
+import 'dart:convert';
 
+import 'package:flutter/material.dart';
+import 'package:flutter_bluetooth_serial/flutter_bluetooth_serial.dart';
+import 'communication.dart';
 import './SelectBondedDevicePage.dart';
-import './ChatPage.dart';
 //import './ChatPage2.dart';
 
 class MainPage extends StatefulWidget {
@@ -11,15 +11,19 @@ class MainPage extends StatefulWidget {
   _MainPage createState() => new _MainPage();
 }
 
-class _MainPage extends State<MainPage> {
-  BluetoothState _bluetoothState = BluetoothState.UNKNOWN;
-  ConnectionState connection;
+BluetoothState _bluetoothState = BluetoothState.UNKNOWN;
+BluetoothDevice selectedDevice;
+final TextEditingController textEditingController = new TextEditingController();
+BluetoothConnection connection;
 
-  String _address = "...";
+class _MainPage extends State<MainPage> {
+  String deviceName;
 
   @override
   void initState() {
     super.initState();
+
+    stateDevice();
 
     // Get current state
     FlutterBluetoothSerial.instance.state.then((state) {
@@ -38,18 +42,20 @@ class _MainPage extends State<MainPage> {
     });
   }
 
-  // This code is just a example if you need to change page and you need to communicate to the raspberry again
-  void init() async {
-    Communication com = Communication();
-    await com.connectBl(_address);
-    com.sendMessage("Hello");
-    setState(() {});
-  }
+  // This code is just a example if y
 
   @override
   void dispose() {
     FlutterBluetoothSerial.instance.setPairingRequestHandler(null);
     super.dispose();
+  }
+
+  Future<String> stateDevice() async {
+    if (selectedDevice != null) {
+      return "Bağlantı Mevcut : ${deviceName}";
+    } else {
+      return "Bağlantı Mevcut Değil";
+    }
   }
 
   @override
@@ -104,34 +110,45 @@ class _MainPage extends State<MainPage> {
                 },
               ),
             ),
-            Divider(),
-            ListTile(
-              title: const Text('Cihaz Seçimi ve Bağlantısı'),
-              subtitle: connection != null
-                  ? Text("Bağlantı Mevcut" + connection.name)
-                  : Text("Bağlantı Mevcut Değil"),
-            ),
             ListTile(
               title: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     primary: Color.fromARGB(255, 6, 90, 163)),
                 child: const Text('Cihaz Seç ve Bağlan'),
                 onPressed: () async {
-                  final BluetoothDevice selectedDevice =
-                      await Navigator.of(context).push(
+                  selectedDevice = await Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (context) {
                         return SelectBondedDevicePage(checkAvailability: false);
                       },
                     ),
                   );
-
-                  if (selectedDevice != null) {
-                    print('Connect -> selected ' + selectedDevice.address);
-                    _startChat(context, selectedDevice);
-                  } else {
-                    print('Connect -> no device selected');
-                  }
+                },
+              ),
+            ),
+            ListTile(
+              title: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    primary: Color.fromARGB(255, 6, 90, 163)),
+                child: const Text('Mesaj Gönder'),
+                onPressed: () {
+                  selectedDevice != null
+                      ? Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return ChatPage(
+                                server: selectedDevice,
+                              );
+                            },
+                          ),
+                        )
+                      : showGeneralDialog(
+                          context: context,
+                          pageBuilder: (BuildContext buildContext,
+                              Animation animation,
+                              Animation secondaryAnimation) {
+                            return _informationDialog(context);
+                          });
                 },
               ),
             ),
@@ -140,14 +157,54 @@ class _MainPage extends State<MainPage> {
       ),
     );
   }
+}
 
-  void _startChat(BuildContext context, BluetoothDevice server) {
-    Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (context) {
-          return ChatPage(server: server);
-        },
+ShapeBorder _defaultShape() {
+  return RoundedRectangleBorder(
+    borderRadius: BorderRadius.circular(14),
+    side: const BorderSide(
+      color: Color.fromARGB(255, 6, 90, 163),
+    ),
+  );
+}
+
+_getCloseButton(context) {
+  return Padding(
+    padding: const EdgeInsets.fromLTRB(20, 10, 5, 10),
+    child: GestureDetector(
+      onTap: () {},
+      child: Container(
+        alignment: FractionalOffset.topRight,
+        child: TextButton(
+          style: TextButton.styleFrom(padding: const EdgeInsets.all(4.0)),
+          child: Center(child: Text("Geri Dön")),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
       ),
-    );
-  }
+    ),
+  );
+}
+
+Widget _informationDialog(context) {
+  return AlertDialog(
+    backgroundColor: Colors.white,
+    shape: _defaultShape(),
+    content: Padding(
+      padding: const EdgeInsets.all(2),
+      child: SizedBox(
+        width: 55,
+        height: 90,
+        child: Column(
+          children: <Widget>[
+            Center(
+              child: Text("Lütfen Bir Cihaza Bağlanın"),
+            ),
+            _getCloseButton(context),
+          ],
+        ),
+      ),
+    ),
+  );
 }
