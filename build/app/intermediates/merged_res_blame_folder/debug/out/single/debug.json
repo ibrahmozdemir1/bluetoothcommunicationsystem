@@ -8,6 +8,10 @@
         "source": "C:\\Users\\googl\\bluetoothcommunicationsystem\\android\\app\\src\\main\\res\\drawable-v21\\launch_background.xml"
     },
     {
+        "merged": "C:\\Users\\googl\\bluetoothcommunicationsystem\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_app.png.flat",
+        "source": "C:\\Users\\googl\\bluetoothcommunicationsystem\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\app.png"
+    },
+    {
         "merged": "C:\\Users\\googl\\bluetoothcommunicationsystem\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\googl\\bluetoothcommunicationsystem\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
@@ -16,11 +20,27 @@
         "source": "C:\\Users\\googl\\bluetoothcommunicationsystem\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\googl\\bluetoothcommunicationsystem\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-hdpi_app.png.flat",
+        "source": "C:\\Users\\googl\\bluetoothcommunicationsystem\\android\\app\\src\\main\\res\\mipmap-hdpi\\app.png"
+    },
+    {
+        "merged": "C:\\Users\\googl\\bluetoothcommunicationsystem\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_app.png.flat",
+        "source": "C:\\Users\\googl\\bluetoothcommunicationsystem\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\app.png"
+    },
+    {
         "merged": "C:\\Users\\googl\\bluetoothcommunicationsystem\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\googl\\bluetoothcommunicationsystem\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\googl\\bluetoothcommunicationsystem\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\googl\\bluetoothcommunicationsystem\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\googl\\bluetoothcommunicationsystem\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_app.png.flat",
+        "source": "C:\\Users\\googl\\bluetoothcommunicationsystem\\android\\app\\src\\main\\res\\mipmap-xhdpi\\app.png"
+    },
+    {
+        "merged": "C:\\Users\\googl\\bluetoothcommunicationsystem\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-mdpi_app.png.flat",
+        "source": "C:\\Users\\googl\\bluetoothcommunicationsystem\\android\\app\\src\\main\\res\\mipmap-mdpi\\app.png"
     }
 ]

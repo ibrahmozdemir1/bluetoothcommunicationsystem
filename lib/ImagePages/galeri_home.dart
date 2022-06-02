@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_storage/firebase_storage.dart';
+import 'package:flutter_blue_app/Pages/anasayfa.dart';
 import 'DataHolder.dart';
 import '../LoadingScreen/LoadingScreen2.dart';
 
@@ -24,6 +25,15 @@ class _PhotoPageState extends State<PhotoPage> {
       appBar: AppBar(
         centerTitle: true,
         title: Text("Çekilen Fotoğraflar"),
+        leading: BackButton(
+          color: Colors.black,
+          onPressed: (){
+            Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(builder: (context) => Anasayfa()),
+                          );
+          },
+        ),
       ),
       body: Container(
         child: GridView.builder(
@@ -62,27 +72,28 @@ class _ImageGridItemState extends State<ImageGridItem> {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
+    return Container(
+      margin: const EdgeInsets.all(1.0),
       child: Hero(
-        tag: widget._index,
-        child: Column(
-          children: <Widget>[
-            Material(
-              child: InkWell(
-                onTap: () {
-                  Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) {
-                    return Product(productImage: imageData[widget._index]);
-                  }));
-                },
-                child: Container(
-                  child: decideGridTileWidget(),
+          tag: widget._index,
+          child: Column(
+            children: <Widget>[
+              Material(
+                child: InkWell(
+                  onTap: () {
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (context) {
+                      return Product(productImage: imageData[widget._index]);
+                    }));
+                  },
+                  child: Container(
+                    child: decideGridTileWidget(),
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
-      ),
     );
   }
 }

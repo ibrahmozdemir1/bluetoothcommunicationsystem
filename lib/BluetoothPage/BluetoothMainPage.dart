@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bluetooth_serial/flutter_bluetooth_serial.dart';
 import 'communication.dart';
 import 'SelectBondedDevicePage.dart';
-//import './ChatPage2.dart';
+import './SelectBondedDevicePage.dart';
 
 class MainPage extends StatefulWidget {
   @override

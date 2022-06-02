@@ -2,7 +2,7 @@
     package="com.example.flutter_blue_app">
    <application
 
-        android:label="flutter_blue_app"
+        android:label="Kablosuz Duyuru Sistemi"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

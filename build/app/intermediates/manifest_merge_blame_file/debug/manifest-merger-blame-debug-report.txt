@@ -33,10 +33,10 @@
 22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 22-->[androidx.core:core:1.6.0] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\8873c12be101f7aafc1d8461fa40d744\core-1.6.0\AndroidManifest.xml:24:18-86
 23        android:debuggable="true"
-24        android:icon="@mipmap/ic_launcher"
-24-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:6:9-43
-25        android:label="flutter_blue_app" >
-25-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:5:9-41
+24        android:icon="@mipmap/app"
+24-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:6:9-35
+25        android:label="Kablosuz Duyuru Sistemi" >
+25-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:5:9-48
 26        <activity
 26-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:7:9-35:20
 27            android:name="com.example.flutter_blue_app.MainActivity"

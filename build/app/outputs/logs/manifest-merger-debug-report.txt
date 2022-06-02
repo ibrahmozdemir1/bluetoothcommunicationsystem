@@ -89,9 +89,9 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\go
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.6.0] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\8873c12be101f7aafc1d8461fa40d744\core-1.6.0\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:5:9-41
+		ADDED from C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:5:9-48
 	android:icon
-		ADDED from C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:6:9-43
+		ADDED from C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:6:9-35
 activity#com.example.flutter_blue_app.MainActivity
 ADDED from C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:7:9-35:20
 	android:launchMode

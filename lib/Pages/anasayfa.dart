@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_blue_app/BluetoothPage/BluetoothMainPage.dart';
 import '../LoadingScreen/LoadingScreen.dart';
 
+
 class Anasayfa extends StatelessWidget {
   void click() {}
   @override
@@ -140,7 +141,7 @@ class Anasayfa extends StatelessWidget {
                           ),
                         ),
                         onTap: () {
-                          Navigator.push(
+                          Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(builder: (context) => Splash()),
                           );
