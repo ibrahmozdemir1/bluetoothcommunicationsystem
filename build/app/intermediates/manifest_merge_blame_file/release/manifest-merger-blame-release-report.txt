@@ -1,0 +1,184 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.flutter_blue_app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.BLUETOOTH" />
+11-->[:flutter_bluetooth_serial] C:\Users\googl\bluetoothcommunicationsystem\build\flutter_bluetooth_serial\intermediates\library_manifest\release\AndroidManifest.xml:7:5-68
+11-->[:flutter_bluetooth_serial] C:\Users\googl\bluetoothcommunicationsystem\build\flutter_bluetooth_serial\intermediates\library_manifest\release\AndroidManifest.xml:7:22-65
+12    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+12-->[:flutter_bluetooth_serial] C:\Users\googl\bluetoothcommunicationsystem\build\flutter_bluetooth_serial\intermediates\library_manifest\release\AndroidManifest.xml:8:5-74
+12-->[:flutter_bluetooth_serial] C:\Users\googl\bluetoothcommunicationsystem\build\flutter_bluetooth_serial\intermediates\library_manifest\release\AndroidManifest.xml:8:22-71
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+13-->[:flutter_bluetooth_serial] C:\Users\googl\bluetoothcommunicationsystem\build\flutter_bluetooth_serial\intermediates\library_manifest\release\AndroidManifest.xml:9:5-81
+13-->[:flutter_bluetooth_serial] C:\Users\googl\bluetoothcommunicationsystem\build\flutter_bluetooth_serial\intermediates\library_manifest\release\AndroidManifest.xml:9:22-78
+14    <!-- <uses-sdk android:minSdkVersion="14" /> -->
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\db3204ab23c87185c2ae53be10828133\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:13:5-79
+15-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\db3204ab23c87185c2ae53be10828133\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:13:22-76
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\db3204ab23c87185c2ae53be10828133\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:14:5-67
+16-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\db3204ab23c87185c2ae53be10828133\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:14:22-64
+17
+18    <application
+18-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:3:4-41:19
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.6.0] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\8873c12be101f7aafc1d8461fa40d744\core-1.6.0\AndroidManifest.xml:24:18-86
+20        android:icon="@mipmap/ic_launcher"
+20-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:6:9-43
+21        android:label="flutter_blue_app" >
+21-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:5:9-41
+22        <activity
+22-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:7:9-35:20
+23            android:name="com.example.flutter_blue_app.MainActivity"
+23-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:8:13-41
+24            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+24-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:11:13-163
+25            android:hardwareAccelerated="true"
+25-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:12:13-47
+26            android:launchMode="singleTop"
+26-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:9:13-43
+27            android:theme="@style/LaunchTheme"
+27-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:10:13-47
+28            android:windowSoftInputMode="adjustResize" >
+28-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:13:13-55
+29
+30            <!--
+31                 Specifies an Android theme to apply to this Activity as soon as
+32                 the Android process has started. This theme is visible to the user
+33                 while the Flutter UI initializes. After that, this theme continues
+34                 to determine the Window background behind the Flutter UI.
+35            -->
+36            <meta-data
+36-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:18:13-21:17
+37                android:name="io.flutter.embedding.android.NormalTheme"
+37-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:19:15-70
+38                android:resource="@style/NormalTheme" />
+38-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:20:15-52
+39            <!--
+40                 Displays an Android View that continues showing the launch screen
+41                 Drawable until Flutter paints its first frame, then this splash
+42                 screen fades out. A splash screen is useful to avoid any visual
+43                 gap between the end of Android's launch screen and the painting of
+44                 Flutter's first frame.
+45            -->
+46            <meta-data
+46-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:27:13-30:17
+47                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+47-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:28:15-79
+48                android:resource="@drawable/launch_background" />
+48-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:29:15-61
+49
+50            <intent-filter>
+50-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:31:13-34:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:32:17-68
+51-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:32:25-66
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:33:17-76
+53-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:33:27-74
+54            </intent-filter>
+55        </activity>
+56        <!--
+57             Don't delete the meta-data below.
+58             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+59        -->
+60        <meta-data
+60-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:38:9-40:33
+61            android:name="flutterEmbedding"
+61-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:39:13-44
+62            android:value="2" />
+62-->C:\Users\googl\bluetoothcommunicationsystem\android\app\src\main\AndroidManifest.xml:40:13-30
+63
+64        <service
+64-->[:firebase_storage] C:\Users\googl\bluetoothcommunicationsystem\build\firebase_storage\intermediates\library_manifest\release\AndroidManifest.xml:8:9-12:19
+65            android:name="com.google.firebase.components.ComponentDiscoveryService"
+65-->[:firebase_storage] C:\Users\googl\bluetoothcommunicationsystem\build\firebase_storage\intermediates\library_manifest\release\AndroidManifest.xml:8:18-89
+66            android:directBootAware="true"
+66-->[com.google.firebase:firebase-common:20.1.1] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\8daa27c68a54e3089a5f1ba506134772\jetified-firebase-common-20.1.1\AndroidManifest.xml:35:13-43
+67            android:exported="false" >
+67-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\db3204ab23c87185c2ae53be10828133\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:19:13-37
+68            <meta-data
+68-->[:firebase_storage] C:\Users\googl\bluetoothcommunicationsystem\build\firebase_storage\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+69                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+69-->[:firebase_storage] C:\Users\googl\bluetoothcommunicationsystem\build\firebase_storage\intermediates\library_manifest\release\AndroidManifest.xml:10:17-126
+70                android:value="com.google.firebase.components.ComponentRegistrar" />
+70-->[:firebase_storage] C:\Users\googl\bluetoothcommunicationsystem\build\firebase_storage\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+71            <meta-data
+71-->[:cloud_firestore] C:\Users\googl\bluetoothcommunicationsystem\build\cloud_firestore\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+72                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+72-->[:cloud_firestore] C:\Users\googl\bluetoothcommunicationsystem\build\cloud_firestore\intermediates\library_manifest\release\AndroidManifest.xml:10:17-134
+73                android:value="com.google.firebase.components.ComponentRegistrar" />
+73-->[:cloud_firestore] C:\Users\googl\bluetoothcommunicationsystem\build\cloud_firestore\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+74            <meta-data
+74-->[:firebase_core] C:\Users\googl\bluetoothcommunicationsystem\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+75                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+75-->[:firebase_core] C:\Users\googl\bluetoothcommunicationsystem\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:10:17-124
+76                android:value="com.google.firebase.components.ComponentRegistrar" />
+76-->[:firebase_core] C:\Users\googl\bluetoothcommunicationsystem\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+77            <meta-data
+77-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\db3204ab23c87185c2ae53be10828133\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:20:13-22:85
+78                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+78-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\db3204ab23c87185c2ae53be10828133\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:21:17-111
+79                android:value="com.google.firebase.components.ComponentRegistrar" />
+79-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\db3204ab23c87185c2ae53be10828133\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:22:17-82
+80            <meta-data
+80-->[com.google.firebase:firebase-storage:20.0.1] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\a4fa8bc0caf7f2d4b3e0d1aa8e3f9549\jetified-firebase-storage-20.0.1\AndroidManifest.xml:33:13-35:85
+81                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+81-->[com.google.firebase:firebase-storage:20.0.1] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\a4fa8bc0caf7f2d4b3e0d1aa8e3f9549\jetified-firebase-storage-20.0.1\AndroidManifest.xml:34:17-107
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[com.google.firebase:firebase-storage:20.0.1] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\a4fa8bc0caf7f2d4b3e0d1aa8e3f9549\jetified-firebase-storage-20.0.1\AndroidManifest.xml:35:17-82
+83        </service>
+84
+85        <uses-library
+85-->[androidx.window:window:1.0.0-beta04] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\88e5ffdc4bb2535c1f3ed335b31246ea\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+86            android:name="androidx.window.extensions"
+86-->[androidx.window:window:1.0.0-beta04] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\88e5ffdc4bb2535c1f3ed335b31246ea\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+87            android:required="false" />
+87-->[androidx.window:window:1.0.0-beta04] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\88e5ffdc4bb2535c1f3ed335b31246ea\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+88        <uses-library
+88-->[androidx.window:window:1.0.0-beta04] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\88e5ffdc4bb2535c1f3ed335b31246ea\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+89            android:name="androidx.window.sidecar"
+89-->[androidx.window:window:1.0.0-beta04] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\88e5ffdc4bb2535c1f3ed335b31246ea\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+90            android:required="false" />
+90-->[androidx.window:window:1.0.0-beta04] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\88e5ffdc4bb2535c1f3ed335b31246ea\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+91
+92        <provider
+92-->[com.google.firebase:firebase-common:20.1.1] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\8daa27c68a54e3089a5f1ba506134772\jetified-firebase-common-20.1.1\AndroidManifest.xml:26:9-31:39
+93            android:name="com.google.firebase.provider.FirebaseInitProvider"
+93-->[com.google.firebase:firebase-common:20.1.1] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\8daa27c68a54e3089a5f1ba506134772\jetified-firebase-common-20.1.1\AndroidManifest.xml:27:13-77
+94            android:authorities="com.example.flutter_blue_app.firebaseinitprovider"
+94-->[com.google.firebase:firebase-common:20.1.1] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\8daa27c68a54e3089a5f1ba506134772\jetified-firebase-common-20.1.1\AndroidManifest.xml:28:13-72
+95            android:directBootAware="true"
+95-->[com.google.firebase:firebase-common:20.1.1] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\8daa27c68a54e3089a5f1ba506134772\jetified-firebase-common-20.1.1\AndroidManifest.xml:29:13-43
+96            android:exported="false"
+96-->[com.google.firebase:firebase-common:20.1.1] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\8daa27c68a54e3089a5f1ba506134772\jetified-firebase-common-20.1.1\AndroidManifest.xml:30:13-37
+97            android:initOrder="100" />
+97-->[com.google.firebase:firebase-common:20.1.1] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\8daa27c68a54e3089a5f1ba506134772\jetified-firebase-common-20.1.1\AndroidManifest.xml:31:13-36
+98
+99        <activity
+99-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\ff54d5a207ab202b9f6b2e820eb69f07\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+100            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+100-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\ff54d5a207ab202b9f6b2e820eb69f07\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+101            android:exported="false"
+101-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\ff54d5a207ab202b9f6b2e820eb69f07\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+102            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+102-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\ff54d5a207ab202b9f6b2e820eb69f07\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+103
+104        <meta-data
+104-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\e1f92a64d0296cbdd8342561ddfbe107\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+105            android:name="com.google.android.gms.version"
+105-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\e1f92a64d0296cbdd8342561ddfbe107\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+106            android:value="@integer/google_play_services_version" />
+106-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\googl\.gradle\caches\transforms-2\files-2.1\e1f92a64d0296cbdd8342561ddfbe107\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+107    </application>
+108
+109</manifest>

@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_blue_app/anasayfa.dart';
-
-import 'MainPage.dart';
-import 'anasayfa.dart';
+import 'package:flutter_blue_app/Pages/anasayfa.dart';
+import 'Pages/anasayfa.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'firebase_options.dart';
+import 'ImagePages/firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
