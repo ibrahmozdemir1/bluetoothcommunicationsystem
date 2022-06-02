@@ -169,21 +169,6 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\googl\\bluetoothcommunicationsystem\\build\\app\\intermediates\\res\\merged\\debug\\values-en-rCA_values-en-rCA.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\googl\\.gradle\\caches\\transforms-2\\files-2.1\\8873c12be101f7aafc1d8461fa40d744\\core-1.6.0\\res\\values-en-rCA\\values-en-rCA.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\googl\\bluetoothcommunicationsystem\\build\\app\\intermediates\\res\\merged\\debug\\values-ko_values-ko.arsc.flat",
             "map": [
                 {
@@ -235,6 +220,21 @@
                         "startOffsets": "55,159,298,414,516,631,748,855,1071,1216,1319,1455,1573,1691,1810,1869,1927",
                         "endColumns": "103,138,115,101,114,116,106,94,144,102,135,117,117,118,58,57,74",
                         "endOffsets": "154,293,409,511,626,743,850,945,1211,1314,1450,1568,1686,1805,1864,1922,1997"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\googl\\bluetoothcommunicationsystem\\build\\app\\intermediates\\res\\merged\\debug\\values-en-rCA_values-en-rCA.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\googl\\.gradle\\caches\\transforms-2\\files-2.1\\8873c12be101f7aafc1d8461fa40d744\\core-1.6.0\\res\\values-en-rCA\\values-en-rCA.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
                     }
                 }
             ]

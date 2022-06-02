@@ -21,8 +21,8 @@
     <application
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="flutter_blue_app" >
+        android:icon="@mipmap/app"
+        android:label="Kablosuz Duyuru Sistemi" >
         <activity
             android:name="com.example.flutter_blue_app.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
