@@ -32,14 +32,12 @@ class _ChatPage extends State<ChatPage> {
     super.initState();
 
     BluetoothConnection.toAddress(widget.server.address).then((_connection) {
-      print('Connected to the device');
       connection = _connection;
       setState(() {
         isConnecting = false;
         isDisconnecting = false;
       });
     }).catchError((error) {
-      print('Cannot connect, exception occured');
       print(error);
     });
   }
