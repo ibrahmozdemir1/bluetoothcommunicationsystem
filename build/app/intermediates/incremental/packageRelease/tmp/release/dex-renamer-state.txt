@@ -1,4 +1,4 @@
-#Mon May 30 03:21:02 TRT 2022
+#Fri Jun 03 18:43:38 TRT 2022
 base.0=C\:\\Users\\googl\\bluetoothcommunicationsystem\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

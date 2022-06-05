@@ -118,7 +118,7 @@ class _SelectBondedDevicePage extends State<SelectBondedDevicePage> {
         .toList();
     return Scaffold(
       appBar: AppBar(
-        title: Text('Select device'),
+        title: Text('Lütfen Cihaz Seçiniz'),
         actions: <Widget>[
           _isDiscovering
               ? FittedBox(

@@ -24,6 +24,10 @@
         "source": "C:\\Users\\googl\\.gradle\\caches\\transforms-2\\files-2.1\\ff54d5a207ab202b9f6b2e820eb69f07\\jetified-play-services-base-18.0.1\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
+        "merged": "C:\\Users\\googl\\bluetoothcommunicationsystem\\build\\app\\intermediates\\res\\merged\\release\\mipmap-xxhdpi_app.png.flat",
+        "source": "C:\\Users\\googl\\bluetoothcommunicationsystem\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\app.png"
+    },
+    {
         "merged": "C:\\Users\\googl\\bluetoothcommunicationsystem\\build\\app\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
         "source": "C:\\Users\\googl\\.gradle\\caches\\transforms-2\\files-2.1\\ff54d5a207ab202b9f6b2e820eb69f07\\jetified-play-services-base-18.0.1\\res\\drawable-mdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
     },
@@ -72,6 +76,10 @@
         "source": "C:\\Users\\googl\\.gradle\\caches\\transforms-2\\files-2.1\\ff54d5a207ab202b9f6b2e820eb69f07\\jetified-play-services-base-18.0.1\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
+        "merged": "C:\\Users\\googl\\bluetoothcommunicationsystem\\build\\app\\intermediates\\res\\merged\\release\\mipmap-xhdpi_app.png.flat",
+        "source": "C:\\Users\\googl\\bluetoothcommunicationsystem\\android\\app\\src\\main\\res\\mipmap-xhdpi\\app.png"
+    },
+    {
         "merged": "C:\\Users\\googl\\bluetoothcommunicationsystem\\build\\app\\intermediates\\res\\merged\\release\\drawable_common_google_signin_btn_text_light_normal.xml.flat",
         "source": "C:\\Users\\googl\\.gradle\\caches\\transforms-2\\files-2.1\\ff54d5a207ab202b9f6b2e820eb69f07\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_text_light_normal.xml"
     },
@@ -106,6 +114,10 @@
     {
         "merged": "C:\\Users\\googl\\bluetoothcommunicationsystem\\build\\app\\intermediates\\res\\merged\\release\\layout-v21_notification_template_custom_big.xml.flat",
         "source": "C:\\Users\\googl\\.gradle\\caches\\transforms-2\\files-2.1\\8873c12be101f7aafc1d8461fa40d744\\core-1.6.0\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\Users\\googl\\bluetoothcommunicationsystem\\build\\app\\intermediates\\res\\merged\\release\\mipmap-xxxhdpi_app.png.flat",
+        "source": "C:\\Users\\googl\\bluetoothcommunicationsystem\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\app.png"
     },
     {
         "merged": "C:\\Users\\googl\\bluetoothcommunicationsystem\\build\\app\\intermediates\\res\\merged\\release\\layout-v21_notification_action_tombstone.xml.flat",
@@ -248,6 +260,10 @@
         "source": "C:\\Users\\googl\\.gradle\\caches\\transforms-2\\files-2.1\\ff54d5a207ab202b9f6b2e820eb69f07\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_icon_disabled.xml"
     },
     {
+        "merged": "C:\\Users\\googl\\bluetoothcommunicationsystem\\build\\app\\intermediates\\res\\merged\\release\\mipmap-hdpi_app.png.flat",
+        "source": "C:\\Users\\googl\\bluetoothcommunicationsystem\\android\\app\\src\\main\\res\\mipmap-hdpi\\app.png"
+    },
+    {
         "merged": "C:\\Users\\googl\\bluetoothcommunicationsystem\\build\\app\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
         "source": "C:\\Users\\googl\\.gradle\\caches\\transforms-2\\files-2.1\\8873c12be101f7aafc1d8461fa40d744\\core-1.6.0\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
     },
@@ -258,6 +274,10 @@
     {
         "merged": "C:\\Users\\googl\\bluetoothcommunicationsystem\\build\\app\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "C:\\Users\\googl\\.gradle\\caches\\transforms-2\\files-2.1\\8873c12be101f7aafc1d8461fa40d744\\core-1.6.0\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\googl\\bluetoothcommunicationsystem\\build\\app\\intermediates\\res\\merged\\release\\mipmap-mdpi_app.png.flat",
+        "source": "C:\\Users\\googl\\bluetoothcommunicationsystem\\android\\app\\src\\main\\res\\mipmap-mdpi\\app.png"
     },
     {
         "merged": "C:\\Users\\googl\\bluetoothcommunicationsystem\\build\\app\\intermediates\\res\\merged\\release\\raw_keep.xml.flat",

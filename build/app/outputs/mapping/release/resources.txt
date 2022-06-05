@@ -2998,7 +2998,7 @@ attr:activityAction:2130771968,
    layout:notification_template_icon_group:2131165188,
    layout:notification_template_part_chronometer:2131165189,
    layout:notification_template_part_time:2131165190,
-   mipmap:ic_launcher:2131230720,
+   mipmap:ic_launcher:2131230721,
    string:common_google_play_services_enable_button:2131361792,
    string:common_google_play_services_enable_text:2131361793,
    string:common_google_play_services_enable_title:2131361794,
@@ -3086,4 +3086,9 @@ Skipped unused resource res/drawable-xxhdpi-v4/common_google_signin_btn_text_lig
 Skipped unused resource res/drawable-xxhdpi-v4/googleg_disabled_color_18.png: 727 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xxhdpi-v4/googleg_standard_color_18.png: 1441 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/layout/custom_dialog.xml: 612 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/mipmap-mdpi-v4/app.png: 3735 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/mipmap-hdpi-v4/app.png: 3735 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/mipmap-xhdpi-v4/app.png: 3735 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/mipmap-xxhdpi-v4/app.png: 3735 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/mipmap-xxxhdpi-v4/app.png: 3735 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/raw/keep.xml: 290 bytes (replaced with small dummy file of size 104 bytes)
