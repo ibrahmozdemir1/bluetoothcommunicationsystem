@@ -5,8 +5,6 @@ import 'package:flutter_blue_app/Pages/anasayfa.dart';
 import 'DataHolder.dart';
 import '../LoadingScreen/LoadingScreen2.dart';
 
-
-
 // ignore: must_be_immutable
 class PhotoPage extends StatefulWidget {
   @override
@@ -27,11 +25,11 @@ class _PhotoPageState extends State<PhotoPage> {
         title: Text("Çekilen Fotoğraflar"),
         leading: BackButton(
           color: Colors.black,
-          onPressed: (){
+          onPressed: () {
             Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(builder: (context) => Anasayfa()),
-                          );
+              context,
+              MaterialPageRoute(builder: (context) => Anasayfa()),
+            );
           },
         ),
       ),
@@ -75,25 +73,29 @@ class _ImageGridItemState extends State<ImageGridItem> {
     return Container(
       margin: const EdgeInsets.all(1.0),
       child: Hero(
-          tag: widget._index,
-          child: Column(
-            children: <Widget>[
-              Material(
-                child: InkWell(
-                  onTap: () {
-                    Navigator.of(context)
-                        .push(MaterialPageRoute(builder: (context) {
-                      return Product(productImage: imageData[widget._index]);
-                    }));
-                  },
+        tag: widget._index,
+        child: Column(
+          children: <Widget>[
+            Material(
+              child: InkWell(
+                onTap: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) {
+                    return Product(productImage: imageData[widget._index]);
+                  }));
+                },
+                child: SizedBox(
+                  height: 200,
+                  width: 200,
                   child: Container(
                     child: decideGridTileWidget(),
                   ),
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
+      ),
     );
   }
 }
@@ -140,18 +142,22 @@ class Product extends StatelessWidget {
                       onPressed: () {
                         FirebaseStorage.instance
                             .refFromURL(productImage)
-                            .delete().whenComplete(() => Navigator.push(context, MaterialPageRoute(builder: (context) => Loading())));
+                            .delete()
+                            .whenComplete(() => Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Loading())));
                       },
                     ),
                   ),
                   Container(
                     child: FutureBuilder(
-                      future: getPhotoDate(),
-                      initialData: "Loading Date...",
-                      builder: (context, AsyncSnapshot text){
-                        return Text("Fotoğrafın Çekilme Tarihi :" + text.data);
-                      }
-                    ),
+                        future: getPhotoDate(),
+                        initialData: "Loading Date...",
+                        builder: (context, AsyncSnapshot text) {
+                          return Text(
+                              "Fotoğrafın Çekilme Tarihi :" + text.data);
+                        }),
                   ),
                 ],
               ),

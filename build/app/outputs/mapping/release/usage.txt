@@ -21575,10 +21575,10 @@ io.grpc.ClientInterceptors:
     static synthetic io.grpc.ClientCall access$100()
 io.flutter.plugin.common.PluginRegistry
 com.google.common.collect.Synchronized$SynchronizedMultiset
-com.google.firebase.firestore.auth.-$$Lambda$FirebaseAppCheckTokenProvider$hu48mr03bfT6X2LDSOXJket2KbA:
-    public final void onAppCheckTokenChanged(com.google.firebase.appcheck.AppCheckTokenResult)
 com.google.firebase.firestore.auth.-$$Lambda$FirebaseAuthCredentialsProvider$SiEkKBu9hz30n6jbv61jv-eXGhA:
     public final void onIdTokenChanged(com.google.firebase.internal.InternalTokenResult)
+com.google.firebase.firestore.auth.-$$Lambda$FirebaseAppCheckTokenProvider$hu48mr03bfT6X2LDSOXJket2KbA:
+    public final void onAppCheckTokenChanged(com.google.firebase.appcheck.AppCheckTokenResult)
 kotlinx.coroutines.scheduling.ExperimentalCoroutineDispatcher:
     public void close()
     public java.lang.String toString()
@@ -21938,8 +21938,8 @@ com.google.firebase.firestore.auth.FirebaseAppCheckTokenProvider:
     private synchronized void onTokenChanged(com.google.firebase.appcheck.AppCheckTokenResult)
     private synthetic void lambda$new$0(com.google.firebase.appcheck.AppCheckTokenResult)
 io.flutter.view.FlutterNativeView:
-    public synthetic io.flutter.plugin.common.BinaryMessenger$TaskQueue makeBackgroundTaskQueue(io.flutter.plugin.common.BinaryMessenger$TaskQueueOptions)
     public synthetic void setMessageHandler(java.lang.String,io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler,io.flutter.plugin.common.BinaryMessenger$TaskQueue)
+    public synthetic io.flutter.plugin.common.BinaryMessenger$TaskQueue makeBackgroundTaskQueue(io.flutter.plugin.common.BinaryMessenger$TaskQueueOptions)
     public synthetic io.flutter.plugin.common.BinaryMessenger$TaskQueue makeBackgroundTaskQueue()
 io.grpc.internal.CallTracer$1
 io.grpc.internal.ManagedChannelImpl$ConfigSelectingClientCall$1CloseInContext:
@@ -22379,7 +22379,7 @@ io.github.edufolly.flutterbluetoothserial.FlutterBluetoothSerialPlugin:
 io.grpc.ClientInterceptors:
     private static final io.grpc.ClientCall NOOP_CALL
 io.flutter.plugin.platform.PlatformView$-CC
-io.flutter.view.TextureRegistry$SurfaceTextureEntry$-CC
 io.flutter.plugin.common.BinaryMessenger$-CC:
     public static io.flutter.plugin.common.BinaryMessenger$TaskQueue $default$makeBackgroundTaskQueue(io.flutter.plugin.common.BinaryMessenger,io.flutter.plugin.common.BinaryMessenger$TaskQueueOptions)
     public static void $default$setMessageHandler(io.flutter.plugin.common.BinaryMessenger,java.lang.String,io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler,io.flutter.plugin.common.BinaryMessenger$TaskQueue)
+io.flutter.view.TextureRegistry$SurfaceTextureEntry$-CC
