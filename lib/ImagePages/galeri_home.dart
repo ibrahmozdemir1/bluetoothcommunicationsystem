@@ -143,7 +143,7 @@ class Product extends StatelessWidget {
                         FirebaseStorage.instance
                             .refFromURL(productImage)
                             .delete()
-                            .whenComplete(() => Navigator.push(
+                            .whenComplete(() => Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
                                     builder: (context) => Loading())));

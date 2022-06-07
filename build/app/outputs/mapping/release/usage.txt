@@ -13167,8 +13167,8 @@ kotlinx.coroutines.channels.Channel$Factory:
 com.google.android.gms.common.internal.GetServiceRequest:
     public android.os.Bundle getExtraArgs()
 kotlinx.coroutines.RunnableKt$Runnable$1
-com.google.common.collect.ContiguousSet
 com.google.common.collect.AbstractMapBasedMultimap$NavigableAsMap
+com.google.common.collect.ContiguousSet
 com.google.protobuf.Mixin
 com.google.android.gms.common.api.internal.zav
 io.grpc.ServerInterceptors
@@ -21938,8 +21938,8 @@ com.google.firebase.firestore.auth.FirebaseAppCheckTokenProvider:
     private synchronized void onTokenChanged(com.google.firebase.appcheck.AppCheckTokenResult)
     private synthetic void lambda$new$0(com.google.firebase.appcheck.AppCheckTokenResult)
 io.flutter.view.FlutterNativeView:
-    public synthetic io.flutter.plugin.common.BinaryMessenger$TaskQueue makeBackgroundTaskQueue(io.flutter.plugin.common.BinaryMessenger$TaskQueueOptions)
     public synthetic void setMessageHandler(java.lang.String,io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler,io.flutter.plugin.common.BinaryMessenger$TaskQueue)
+    public synthetic io.flutter.plugin.common.BinaryMessenger$TaskQueue makeBackgroundTaskQueue(io.flutter.plugin.common.BinaryMessenger$TaskQueueOptions)
     public synthetic io.flutter.plugin.common.BinaryMessenger$TaskQueue makeBackgroundTaskQueue()
 io.grpc.internal.CallTracer$1
 io.grpc.internal.ManagedChannelImpl$ConfigSelectingClientCall$1CloseInContext:
@@ -22378,8 +22378,8 @@ io.github.edufolly.flutterbluetoothserial.FlutterBluetoothSerialPlugin:
     static final synthetic boolean $assertionsDisabled
 io.grpc.ClientInterceptors:
     private static final io.grpc.ClientCall NOOP_CALL
-io.flutter.view.TextureRegistry$SurfaceTextureEntry$-CC
 io.flutter.plugin.platform.PlatformView$-CC
 io.flutter.plugin.common.BinaryMessenger$-CC:
     public static io.flutter.plugin.common.BinaryMessenger$TaskQueue $default$makeBackgroundTaskQueue(io.flutter.plugin.common.BinaryMessenger,io.flutter.plugin.common.BinaryMessenger$TaskQueueOptions)
     public static void $default$setMessageHandler(io.flutter.plugin.common.BinaryMessenger,java.lang.String,io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler,io.flutter.plugin.common.BinaryMessenger$TaskQueue)
+io.flutter.view.TextureRegistry$SurfaceTextureEntry$-CC
